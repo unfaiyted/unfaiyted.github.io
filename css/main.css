@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Teko');
+
+html, body {
+
+    background: url("../images/drk-box.png");
+    /*background-size: cover;*/
+    position: relative;
+    z-index:-2;
+    height: 100%;
+
+}
+
+.bg-custom-dark {
+    background-color: #1C1C1D;
+    /*background: url("../images/drk-box.png");*/
+}
+
+
+nav {
+    font-family: 'Teko', sans-serif;
+}
+.my-name {
+    color: #fff;
+    font-size: 40px;
+
+}
+
+.main-container {
+    /*background-color: rgba(255,255,255,0.9);*/
+    background: url("../images/astro-bg.jpg");
+    background-size: cover;
+    position: relative;
+    z-index:-2;
+    color: #fff;
+
+}
+
+.box {
+    width:95%;
+    height:200px;
+    background:#FFF;
+    background: url("../images/bg-paper.png");
+    margin:0px auto;
+}
+
+.box h3{
+    text-align:center;
+    position:relative;
+    top:80px;
+}
+
+.effect2
+{
+    position: relative;
+}
+.effect2:before, .effect2:after
+{
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width:300px;
+    background: #777;
+    -webkit-box-shadow: 0 15px 30px #000;
+    -moz-box-shadow: 0 15px 30px #000;
+    box-shadow: 0 15px 30px #000;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+.effect2:after
+{
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+}
+
+
+nav a {
+    color: #fff;
+
+}
+
+
+.img-logo  {
+    width: 60px;
+    height: 60px;
+}
+
+.contact-btn {
+    background-color: red;
+    border: 3px solid red;
+    color: #fff;
+    border-radius: 25px;
+    width: 150px;
+    text-align: center;
+    -webkit-box-shadow: -1px -1px 44px -6px rgba(255,0,0,1);
+    -moz-box-shadow: -1px -1px 44px -6px rgba(255,0,0,1);
+    box-shadow: -1px -1px 44px -6px rgba(255,0,0,1);
+
+}
+
+.contact-btn a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.tag-line {
+    font-size: 72px;
+
+}

@@ -72,6 +72,9 @@ nav {
 }
 
 
+
+
+
 .box {
     width:100%;
     background:#FFF;
@@ -185,9 +188,38 @@ nav a {
 
 
 .panel {
-background-color: red;
-border: 2px solid #000;
+    background-color: red;
+    border: 0;
+    color: #fff;
+    min-height: 500px;
+    padding: 20px;
+
 }
+
+.panel span {
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+
+.design-panel {
+    background: url("../images/astro-bg.jpg");
+    background-size: cover;
+}
+.development-panel {
+    background: url("../images/hipster.jpg");
+    background-size: cover;
+}
+.comm-panel {
+    background: url("../images/24hours.jpg");
+    background-size: cover;
+}
+.strategy-panel {
+    background: url("../images/time.jpg");
+    background-size: cover;
+}
+
 
 footer {
     width: 100%;

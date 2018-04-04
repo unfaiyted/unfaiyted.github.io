@@ -186,7 +186,6 @@ nav a {
 
 }
 
-
 .panel {
     border: 0;
     color: #fff;
@@ -196,12 +195,16 @@ nav a {
 
 }
 
-.panel span {
-    font-weight: bold;
-    font-size: 16px;
-
+.panel img {
+    width: 70%;
+    margin: 30px;
 }
 
+.panel span {
+    font-weight: bold;
+    font-size: 25px;
+
+}
 
 .design-panel::after {
 
@@ -216,7 +219,16 @@ nav a {
     z-index: -2;
     content: "";
     opacity: 0.7;
+
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(1px) sepia(60%);
 }
+
+
+
 .development-panel::after {
     background: url("../images/hipster.jpg");
     background-size: cover;
@@ -228,6 +240,11 @@ nav a {
     z-index: -2;
     content: "";
     opacity: 0.7;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(1px) sepia(60%);
 }
 .comm-panel::after {
     background: url("../images/24hours.jpg");
@@ -240,6 +257,11 @@ nav a {
     z-index: -2;
     content: "";
     opacity: 0.7;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(1px) sepia(60%);
 }
 .strategy-panel::after {
     background: url("../images/time.jpg");
@@ -252,6 +274,11 @@ nav a {
     z-index: -2;
     content: "";
     opacity: 0.7;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(1px) sepia(60%);
 }
 
 .more-btn {
@@ -263,9 +290,14 @@ nav a {
     width: 40px;
     height: 40px;
     line-height: 3.0;
-    padding-left: 6px;
     margin-left: auto;
     margin-right: auto;
+
+    -webkit-box-shadow: -1px -1px 44px -6px rgba(255,0,0,1);
+    -moz-box-shadow: -1px -1px 44px -6px rgba(255,0,0,1);
+    box-shadow: -1px -1px 44px -6px rgba(255,0,0,1);
+    cursor: pointer;
+
 }
 /* Shutter Out Vertical */
 .hvr-shutter-out-vertical {
@@ -315,6 +347,49 @@ nav a {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
 }
+
+
+
+
+/* Pulse */
+@-webkit-keyframes hvr-pulse {
+    25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+@keyframes hvr-pulse {
+    25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+.hvr-pulse {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+    -webkit-animation-name: hvr-pulse;
+    animation-name: hvr-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
 
 footer {
     width: 100%;

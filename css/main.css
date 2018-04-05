@@ -186,6 +186,7 @@ nav a:hover {
     text-align: center;
     line-height: 35px;
     padding-top: 5px;
+    margin-top: 10px;
     -webkit-box-shadow: -1px -1px 44px -6px rgba(255,0,0,1);
     -moz-box-shadow: -1px -1px 44px -6px rgba(255,0,0,1);
     box-shadow: -1px -1px 44px -6px rgba(255,0,0,1);

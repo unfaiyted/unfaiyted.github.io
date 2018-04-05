@@ -9,9 +9,7 @@ html, body {
     height: 100%;
     padding: 0;
     margin: 0;
-
 }
-
 
 body {
     overflow: hidden;
@@ -48,9 +46,8 @@ body {
     /* is width and height divided by two */
 }
 
-
-
-
+/* Fix for issues overflow 100%*/
+.row { margin: 0; padding: 0 }
 
 .container {
     width: 100%;
@@ -67,7 +64,7 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: -2 !important;
+    z-index: 0 !important;
     padding: 0;
     margin: 0;
 }
@@ -112,9 +109,6 @@ nav {
     position: relative;
     transform: translateY(25%);
 }
-
-
-
 
 
 .box {
@@ -179,8 +173,8 @@ nav a:hover {
 
 
 .img-logo  {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 }
 
 .contact-btn {
@@ -188,9 +182,10 @@ nav a:hover {
     border: 3px solid red;
     color: #fff;
     border-radius: 25px;
-    width: 150px;
+    width: 130px;
     text-align: center;
-    line-height: 40px;
+    line-height: 35px;
+    padding-top: 5px;
     -webkit-box-shadow: -1px -1px 44px -6px rgba(255,0,0,1);
     -moz-box-shadow: -1px -1px 44px -6px rgba(255,0,0,1);
     box-shadow: -1px -1px 44px -6px rgba(255,0,0,1);

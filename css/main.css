@@ -702,6 +702,25 @@ footer nav {
 
 }
 
+
+.years-last {
+    margin-left: 45px;
+    border-left: transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.years-last:before {
+    content : "";
+    position: absolute;
+    left: 60px;
+    height  : 10px;
+    width   : 50%;  /* or 100px */
+    border-left: 2px solid #000;
+}
+
+
 .time-line {
     position: absolute;
     left:  51px;

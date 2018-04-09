@@ -613,6 +613,9 @@ footer nav {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+
+
+
 }
 
 .paper h1,h2,h3 {
@@ -654,6 +657,7 @@ footer nav {
     right: -5px;
     transform: rotate(1deg);
     z-index: -2;
+    filter: drop-shadow(0 0 30px #333);
 }
 
 .left-panel {
@@ -758,6 +762,12 @@ footer nav {
 
 }
 
+.resume-right-header {
+    padding-left: 20%;
+    padding-top: 40px;
+    padding: 40px 10%;
+
+}
 .resume-side-header {
 
 

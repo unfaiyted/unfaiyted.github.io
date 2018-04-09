@@ -794,3 +794,54 @@ h3:after {
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 
 }
+
+
+/* Outer */
+.popup {
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    top: 0px;
+    left:0px;
+    overflow: auto;
+    z-index: 10000000 !important;
+}
+/* Inner */
+.popup-inner {
+    width:90%;
+    padding:40px;
+    position:absolute;
+    top: calc(110vh);
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    border-radius:3px;
+    z-index: 10000000 !important;
+}
+/* Close Button */
+.popup-close {
+    width:30px;
+    height:30px;
+    padding-top:4px;
+    display:inline-block;
+    position:absolute;
+    top: 120px;
+    right:130px;
+    transition:ease 0.25s all;
+    -webkit-transform:translate(50%, -50%);
+    transform:translate(50%, -50%);
+    border-radius:1000px;
+    background:rgba(0,0,0,0.8);
+    font-family:Arial, Sans-Serif;
+    font-size:20px;
+    text-align:center;
+    line-height:100%;
+    color:#fff;
+}
+.popup-close:hover {
+    -webkit-transform:translate(50%, -50%) rotate(180deg);
+    transform:translate(50%, -50%) rotate(180deg);
+    background:rgba(0,0,0,1);
+    text-decoration:none;
+}

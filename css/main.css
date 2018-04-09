@@ -802,23 +802,55 @@ h3:after {
     height:100%;
     display:none;
     position:fixed;
-    top: 0px;
-    left:0px;
+    top: 0;
+    left: 0;
     overflow: auto;
     z-index: 10000000 !important;
+    background-color: rgba(0,0,0,0.5);
 }
 /* Inner */
 .popup-inner {
-    width:90%;
-    padding:40px;
-    position:absolute;
-    top: calc(110vh);
-    left:50%;
-    -webkit-transform:translate(-50%, -50%);
-    transform:translate(-50%, -50%);
-    border-radius:3px;
-    z-index: 10000000 !important;
+        width:90%;
+        padding:40px;
+        position:absolute;
+        left:50%;
+        top: 750px;
+        -webkit-transform:translate(-50%, -50%);
+        transform:translate(-50%, -50%);
+        border-radius:3px;
+        z-index: 10000000 !important;
+    }
+
+    /*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .popup-inner {
+        top: 1100px;
+    }
+
 }
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .popup-inner {
+        top: 1000px;
+    }
+
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .popup-inner {
+        top: 950px;
+    }
+
+}
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .popup-inner {
+        top: 750px;
+    }
+}
+
 /* Close Button */
 .popup-close {
     width:30px;
